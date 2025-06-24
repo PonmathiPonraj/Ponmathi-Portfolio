@@ -5,7 +5,7 @@ import resumeFile from '../PonmathiPonraj_Resume.pdf';
 const Hero: React.FC = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const titles = ['Software Developer', 'Automation Tester', 'Freelancer', 'Technical Trainer'];
+  const titles = ['Web Developer', 'Automation Tester', 'Freelancer', 'Technical Trainer'];
   const currentTitle = titles[currentIndex];
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       timeout = setTimeout(() => {
         setDisplayedText('');
         setCurrentIndex((prev) => (prev + 1) % titles.length);
-      }, 2000);
+      }, 1000);
     }
 
     return () => clearTimeout(timeout);

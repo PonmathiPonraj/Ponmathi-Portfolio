@@ -3,6 +3,7 @@ import { ExternalLink, Github, Eye, Folder } from 'lucide-react';
 import crackerShopImage from '../assets/cracker-1.jpg';
 import speedDetectorImage from '../assets/detect-speed.jpg';
 import mailClientImage from '../assets/mail-2.jpg';
+import sareesImage from '../assets/sarees-2.jpg'
 
 const Projects: React.FC = () => {
   const projects = [
@@ -15,6 +16,16 @@ const Projects: React.FC = () => {
       githubUrl: '#',
       featured: true,
       category: 'Full Stack'
+    },
+    {
+      title: 'Sree Pon Sarees',
+      description: 'A visually engaging and responsive website developed for a local textile shop to highlight its range of clothing products. It offers smooth navigation and an optimized user experience across devices, with future plans for backend integration to support inventory management.',
+      image: sareesImage,
+      technologies: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'React.js'],
+      liveUrl: '#',
+      githubUrl: '#',
+      featured: true,
+      category: 'Frontend'
     },
     {
       title: 'Web-Based Mail Client',
@@ -35,26 +46,6 @@ const Projects: React.FC = () => {
       githubUrl: '#',
       featured: true,
       category: 'IOT'
-    },
-    {
-      title: 'Sree Pon Sarees',
-      description: 'A visually engaging and responsive website developed for a local textile shop to highlight its range of clothing products. It offers smooth navigation and an optimized user experience across devices, with future plans for backend integration to support inventory management.',
-      image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'React.js'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      category: 'Frontend'
-    },
-    {
-      title: 'Sree Pon Sarees',
-      description: 'A visually engaging and responsive website developed for a local textile shop to highlight its range of clothing products. It offers smooth navigation and an optimized user experience across devices, with future plans for backend integration to support inventory management.',
-      image: 'https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'React.js'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false,
-      category: 'Frontend'
     }
   ];
 

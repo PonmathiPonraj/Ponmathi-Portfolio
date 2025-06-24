@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
       title: 'Frontend',
       color: 'from-primary-500 to-primary-600',
       skills: [
-        { name: 'HTML5/CSS3', level: 95, color: '#50C878' },
+        { name: 'HTML5/CSS3'},
         { name: 'BootStrap', level: 95, color: '#FFF44F' },
         { name: 'JavaScript', level: 90, color: '#06B6D4' },
         { name: 'Tailwind CSS', level: 85, color: '#FFA500' },
@@ -77,59 +77,84 @@ const Skills: React.FC = () => {
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-secondary-400 to-accent-400 mx-auto rounded-full"></div>
-        </div>
+        </div>     
 
         {/* Skills Grid */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {skillCategories.map((category, categoryIndex) => (
-            <div
-              key={categoryIndex}
-              className="group relative"
-              style={{ animationDelay: `${categoryIndex * 0.2}s` }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl rounded-2xl"
-                   style={{ background: `linear-gradient(to right, ${category.color.split(' ')[1]}, ${category.color.split(' ')[3]})` }}></div>
-              <div className="relative bg-dark-900/80 backdrop-blur-xl border border-primary-500/20 rounded-2xl p-8 group-hover:border-primary-400/40 transition-all duration-300 transform group-hover:scale-105">
-                {/* Category Header */}
-                <div className="flex items-center gap-3 mb-8">
-                  <div className={`p-3 bg-gradient-to-r ${category.color} rounded-lg text-white shadow-lg`}>
-                    {category.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">{category.title}</h3>
+          <div className="relative bg-dark-900/80 backdrop-blur-xl border border-primary-500/20 rounded-2xl p-5 group-hover:border-primary-400/40 transition-all duration-300 transform group-hover:scale-105">
+            <div className="flex flex-col items-center gap-6 mb-8">
+              <div className="flex items-center justify-center gap-3">
+                <div className={`p-3 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg text-white shadow-lg`}>
+                  <Code size={24} />
                 </div>
+                <h3 className="text-2xl font-bold text-white">Frontend Technologies</h3>
+              </div>
 
-                {/* Skills List */}
-                <div className="space-y-6">
-                  {category.skills.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="text-gray-300 font-medium flex items-center gap-2">
-                          <div 
-                            className="w-3 h-3 rounded-full" 
-                            style={{ backgroundColor: skill.color }}
-                          ></div>
-                          {skill.name}
-                        </span>
-                        <span className="text-gray-400 text-sm font-semibold">{skill.level}%</span>
-                      </div>
-                      <div className="h-2 bg-dark-800 rounded-full overflow-hidden">
-                        <div
-                          className="h-full rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
-                          style={{
-                            width: isVisible ? `${skill.level}%` : '0%',
-                            backgroundColor: skill.color,
-                            transitionDelay: `${(categoryIndex * 6 + skillIndex) * 100}ms`
-                          }}
-                        >
-                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              {/* Tech Stack Tags */}
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  'HTML5/CSS3', 'BootStrap', 'Tailwind CSS', 'JavaScript', 'React.js'
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-dark-800/50 border border-primary-500/20 text-gray-300 rounded-full text-sm hover:bg-dark-700/50 hover:border-primary-400/40 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
-          ))}
+          </div>
+
+          <div className="relative bg-dark-900/80 backdrop-blur-xl border border-primary-500/20 rounded-2xl p-5 group-hover:border-primary-400/40 transition-all duration-300 transform group-hover:scale-105">
+            <div className="flex flex-col items-center gap-6 mb-8">
+              <div className="flex items-center justify-center gap-3">
+                <div className={`p-3 bg-gradient-to-r from-secondary-500 to-secondary-600 rounded-lg text-white shadow-lg`}>
+                  <Database size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Backend Technologies</h3>
+              </div>
+
+              {/* Tech Stack Tags */}
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  'Node.js', 'MongoDB', 'Express.js', 'PHP', 'MySQL'
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-dark-800/50 border border-primary-500/20 text-gray-300 rounded-full text-sm hover:bg-dark-700/50 hover:border-primary-400/40 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="relative bg-dark-900/80 backdrop-blur-xl border border-primary-500/20 rounded-2xl p-5 group-hover:border-primary-400/40 transition-all duration-300 transform group-hover:scale-105">
+            <div className="flex flex-col items-center gap-6 mb-8">
+              <div className="flex items-center justify-center gap-3">
+                <div className={`p-3 bg-gradient-to-r from-accent-500 to-accent-600 rounded-lg text-white shadow-lg`}>
+                  <Palette size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-white">Tools & Utilities</h3>
+              </div>
+
+              {/* Tech Stack Tags */}
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  'Cypress', 'Git/Github', 'Jira', 'Postman', 'Firebase', 'Netlify'
+                ].map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-4 py-2 bg-dark-800/50 border border-primary-500/20 text-gray-300 rounded-full text-sm hover:bg-dark-700/50 hover:border-primary-400/40 hover:text-white transition-all duration-300 transform hover:scale-105"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Additional Technologies */}
@@ -137,7 +162,7 @@ const Skills: React.FC = () => {
           <h3 className="text-2xl font-bold text-white mb-8">Additional Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'Manual Testing', 'DSA', 'Redux', 'Material-UI', 'IOT', 'C', 'Java', 'Python', 'Netlify'
+              'DSA', 'Manual Testing', 'Automation Testing', 'Redux', 'Material-UI', 'IOT', 'C', 'Java', 'Python'
             ].map((tech, index) => (
               <span
                 key={index}
