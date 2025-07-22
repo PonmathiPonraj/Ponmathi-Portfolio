@@ -24,7 +24,7 @@ const About: React.FC = () => {
     {
       icon: <Users size={24} />,
       title: 'Empowering Mentor',
-      description: 'Trained 300+ learners in full stack development through online and offline sessions. Passionate about guiding non-tech students toward job-ready skills and placements',
+      description: 'Trained 250+ learners in web development through online and offline sessions. Passionate about guiding non-tech students toward job-ready skills and placements',
       color: 'from-primary-500 to-secondary-600'
     }
   ];
@@ -62,7 +62,7 @@ const About: React.FC = () => {
                     I'm Ponmathi from Sivakasi, holding a Bachelor's degree in Computer Science and Engineering from AAA College of Engineering and Technology (2021). Over the past three years, I've gained practical experience in frontend development, automation testing, and freelancing, contributing to a variety of web-based projects and client solutions.
                   </p>
                   <p className="text-justify">
-                    Currently, I work as a Technical Trainer at Kevell Global Solutions in Madurai, where I lead web development internship programs. My role involves not just delivering technical content, but also designing structured training modules and mentoring students through their learning journey. I've successfully managed both short-term and long-term internship batches, handling over 250+ students at a time in offline and online sessions. My sessions cover both the theoretical aspects and real-time project work, helping students transition from learners to confident developers.
+                    Currently, I work as a Technical Trainer at Kevell Global Solutions in Madurai, where I lead web development internship programs. My role involves not just delivering technical content, but also designing structured training modules and mentoring students through their learning journey. I've successfully managed both short-term and long-term internship batches, handling over 50+ students at a time in offline and online sessions. My sessions cover both the theoretical aspects and real-time project work, helping students transition from learners to confident developers.
                   </p>
                   <p className="text-justify">
                     I am deeply passionate about continuous learning and believe in sharing knowledge to uplift others in the tech community. Whether it's writing code, guiding beginners through complex topics, or solving problems in real-world projects, I find joy in every step of the process. I aspire to grow further in the field of full stack development and technical education, constantly seeking new challenges and opportunities to make a positive impact.

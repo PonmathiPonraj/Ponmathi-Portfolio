@@ -134,12 +134,7 @@ const Footer: React.FC = () => {
         {/* Additional Footer Info */}
         <div className="mt-8 pt-8 border-t border-primary-500/10">
           <div className="text-center">
-            <p className="text-gray-400 text-xs leading-relaxed">
-              This portfolio showcases my passion for creating exceptional digital experiences. 
-              Built with React.js, TypeScript, and Tailwind CSS, featuring custom animations and modern design principles.
-              <br />
-              <span className="text-primary-400">Always open to new opportunities and exciting collaborations.</span>
-            </p>
+            {/* Removed portfolio showcase description as requested */}
           </div>
         </div>
       </div>

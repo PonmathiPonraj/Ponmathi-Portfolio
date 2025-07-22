@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
   const projects = [
     {
       title: 'Prathish Crackers',
-      description: 'A web-based solution designed for a cracker shop to manage product listings and real-time price updates. Built with HTML, CSS, Bootstrap, PHP, and MySQL, the system ensures seamless user experience through effective frontend-backend integration, making seasonal sales management easier and more efficient.',
+      description: 'Developed responsive websites for local businesses with clean, mobile-first designs to boost engagement. Implemented backend connectivity for dynamic content and real-time updates. Delivered a custom site for a cracker shop with live pricing to support seasonal sales.',
       image: crackerShopImage,
       technologies: ['HTML5', 'CSS3', 'BootStrap', 'PHP', 'MYSQL'],
       liveUrl: 'https://www.bestonlinecrackers.in',
@@ -18,8 +18,8 @@ const Projects: React.FC = () => {
       category: 'Full Stack'
     },
     {
-      title: 'Sree Pon Sarees',
-      description: 'A visually engaging and responsive website developed for a local textile shop to highlight its range of clothing products. It offers smooth navigation and an optimized user experience across devices, with future plans for backend integration to support inventory management.',
+      title: 'Textile Shop Website',
+      description: 'Built a responsive website to showcase the shop’s products with category filtering and smooth navigation. Optimized for fast, consistent performance across devices. Designed a clean interface and structured the frontend for future integration of inventory and order management.',
       image: sareesImage,
       technologies: ['HTML5', 'CSS3', 'Tailwind CSS', 'JavaScript', 'React.js'],
       liveUrl: '#',
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'Web-Based Mail Client',
-      description: 'A frontend-based mail client interface designed to simulate essential email features in a user-centric environment. It allows users to view inbox and sent mails, track unread messages, and manage mail actions through an intuitive UI — showcasing frontend skills like routing, state management, and component-based design.',
+      description: 'Developed a full-stack mail client with secure user authentication and personalized inbox management. Implemented real-time message updates, unread counts, and mail deletion features for smooth user interaction. Delivered a responsive, cross-device UI optimized for performance and ease of use.',
       image: mailClientImage,
       technologies: ['HTML5', 'CSS3', 'BootStrap', 'JavaScript', 'React.js', 'Redux'],
       liveUrl: '#',
@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 ${project.title === 'Prathish Crackers' ? 'object-top mt-0' : ''}`}
+                    className={`w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110${(project.title === 'Sree Pon Sarees' || project.title === 'Prathish Crackers') ? ' object-top mt-0' : ''}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/50 to-transparent"></div>
                 </div>
@@ -112,20 +112,17 @@ const Projects: React.FC = () => {
 
                   {/* Project Links */}
                   <div className="flex gap-4">
-                    <a
-                      href={project.liveUrl}
-                      className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 text-sm font-medium transform hover:scale-105"
-                    >
-                      <Eye size={16} />
-                      Live Demo
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      className="flex items-center gap-2 px-4 py-2 border border-primary-500/30 text-primary-400 rounded-lg hover:border-primary-400 hover:bg-primary-500/10 transition-all duration-300 text-sm font-medium"
-                    >
-                      <Github size={16} />
-                      Source Code
-                    </a>
+                    {!(project.title === 'Web-Based Mail Client' || project.title === 'Detecting Speed Limit of Vehicles') && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-lg hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 text-sm font-medium transform hover:scale-105"
+                      >
+                        <Eye size={16} />
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -134,7 +131,7 @@ const Projects: React.FC = () => {
         </div>
 
         {/* Other Projects */}
-        <div>
+        {/* <div>
           <h3 className="text-3xl font-bold text-white mb-12 text-center">More Projects</h3>
           <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
             {otherProjects.map((project, index) => (
@@ -187,7 +184,7 @@ const Projects: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

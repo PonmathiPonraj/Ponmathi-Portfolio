@@ -9,9 +9,10 @@ const Experience: React.FC = () => {
       location: 'Madurai',
       period: '05/2024 - Present',
       description: [
-        'Currently working as a technical trainer',
-        'Handling internships on full stack development and web development programs for both short-term and long-term durations, for both college students and graduates',
-        'Continuously updating myself with new technologies and skills to enhance my professional growth'
+        'Delivered full stack and web development training for internship cohorts.',
+        'Conducted both short-term and long-term programs for students and graduates.',
+        'Designed project-based curricula covering frontend, backend, and deployment.',
+        'Adopted emerging tools to align training with evolving industry trends.'
       ],
       technologies: ['Full Stack Development', 'Web Development', 'Soft Skills Training', 'Student Mentoring', 'Career Guidance'],
       color: 'from-primary-500 to-primary-600'
@@ -20,12 +21,12 @@ const Experience: React.FC = () => {
       title: 'Website Developer',
       company: 'Freelancer',
       location: 'Sivakasi',
-      period: '10/2022 - 04/2024',
+      period: '10/2022 - 12/2023',
       description: [
-        'Built responsive and user-friendly websites using HTML, CSS, and Bootstrap',
-        'Developed backend functionality with PHP and SQL for dynamic content updates',
-        'Created a website for a cracker shop in Sivakasi with real-time price update features',
-        'Ensured smooth integration between frontend and backend for optimal performance'
+        'Developed responsive, user-friendly websites for local businesses with mobile-first design.',
+        'Built backend logic and database connectivity for dynamic updates and real-time interaction.',
+        'Delivered a custom site for a cracker shop with live pricing updates and seasonal visibility.',
+        'Enhanced user engagement through clean layouts and seamless cross-device performance.'
       ],
       technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'SQL'],
       color: 'from-secondary-500 to-secondary-600'
@@ -36,9 +37,10 @@ const Experience: React.FC = () => {
       location: 'Chennai',
       period: '12/2021 - 07/2022',
       description: [
-        'Worked as an Automation Tester using the Cypress framework with JavaScript',
-        'Automated test scenarios for the Claims domain of the HPS Novus medical insurance site, covering employer, provider, patient, and participant details',
-        'Collaborated with the Manual Testing team to translate manual test cases into automated scripts'
+        'Contributed to feature development and UI enhancements in the Claims module of a medical insurance platform.',
+        'Ensured functional accuracy and smooth UX by writing clean, modular, and maintainable code.',
+        'Collaborated with cross-functional teams to deliver scalable and production-ready solutions.',
+        'Built automation scripts integrated into the CI pipeline, cutting manual effort and accelerating testing.'
       ],
       technologies: ['Manual Testing', 'Cypress', 'JavaScript', 'DSA'],
       color: 'from-accent-500 to-accent-600'
@@ -49,9 +51,10 @@ const Experience: React.FC = () => {
       location: 'Sivakasi',
       period: '06/2021 - 11/2021',
       description: [
-        'Worked as a Frontend Developer using HTML, CSS, and React.js on Canadian and DBB projects',
-        'Modified designs using CSS and managed content, including titles, images, JSON data, and videos',
-        'Involved in test case preparation, execution, and defect identification, ensuring full application coverage'
+        'Built and maintained responsive, component-based UIs for enterprise apps with accessibility compliance.',
+        'Implemented dynamic rendering and layout logic to ensure consistent media-rich experiences.',
+        'Developed unit tests for UI components to catch issues early and support stable deployments.',
+        'Performed cross-browser validations to reduce post-release bugs and improve UI reliability.'
       ],
       technologies: ['HTML', 'CSS', 'React.js', 'JSON', 'Unit Testing', 'Git/Github'],
       color: 'from-primary-500 to-secondary-600'

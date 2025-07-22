@@ -83,11 +83,8 @@ const Hero: React.FC = () => {
           </h1>
 
           {/* Animated Subtitle */}
-          <div className="text-2xl md:text-4xl text-gray-300 mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            <span className="inline-block min-h-[1.2em] relative">
-              {displayedText}
-              <span className="inline-block w-0.5 h-8 bg-primary-400 ml-1 animate-pulse"></span>
-            </span>
+          <div className="text-xl md:text-2xl text-gray-300 mb-8 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            Technical Instructor | Full Stack Development (MERN)
           </div>
 
           {/* Description */}
