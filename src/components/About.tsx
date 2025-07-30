@@ -3,28 +3,28 @@ import { User, Zap, Code2, Lightbulb, Target, Users } from 'lucide-react';
 
 const About: React.FC = () => {
   const highlights = [
-    {
-      icon: <Code2 size={24} />,
-      title: 'Practical Architecture',
-      description: 'Developing scalable, maintainable web applications using industry best practices and clean coding standards with real-world project experience.',
-      color: 'from-primary-500 to-primary-600'
-    },
+    // {
+    //   icon: <Code2 size={24} />,
+    //   title: 'Practical Architecture',
+    //   description: 'Built scalable, maintainable web apps using clean code and industry best practices.',
+    //   color: 'from-primary-500 to-primary-600'
+    // },
     {
       icon: <Lightbulb size={24} />,
       title: 'Skill-Driven Training',
-      description: 'Blending hands-on coding with instruction, guiding aspiring developers through emerging web technologies and real-time use cases in MERN stack.',
+      description: 'Delivered hands-on MERN stack sessions with real-time use cases.',
       color: 'from-secondary-500 to-secondary-600'
     },
     {
       icon: <Target size={24} />,
       title: 'Impact-Oriented',
-      description: 'Focused on project outcomes—whether in testing, frontend, or backend—ensuring functional, efficient, and user-friendly solutions for every task.',
+      description: 'Focused on delivering efficient, user-friendly solutions across the full stack.',
       color: 'from-accent-500 to-accent-600'
     },
     {
       icon: <Users size={24} />,
       title: 'Empowering Mentor',
-      description: 'Trained 250+ learners in web development through online and offline sessions. Passionate about guiding non-tech students toward job-ready skills and placements',
+      description: 'Trained 250+ learners, helping non-tech students become job-ready.',
       color: 'from-primary-500 to-secondary-600'
     }
   ];
@@ -59,13 +59,13 @@ const About: React.FC = () => {
                 </div>
                 <div className="space-y-6 text-gray-300 leading-relaxed">
                   <p className="text-justify">
-                    I'm Ponmathi from Sivakasi, holding a Bachelor's degree in Computer Science and Engineering from AAA College of Engineering and Technology (2021). Over the past three years, I've gained practical experience in frontend development, automation testing, and freelancing, contributing to a variety of web-based projects and client solutions.
+                    I'm Ponmathi from Sivakasi, a Computer Science and Engineering graduate from AAA College of Engineering and Technology (2021). Over the past three years, I've gained hands-on experience as a software developer and in automation testing.
                   </p>
                   <p className="text-justify">
-                    Currently, I work as a Technical Trainer at Kevell Global Solutions in Madurai, where I lead web development internship programs. My role involves not just delivering technical content, but also designing structured training modules and mentoring students through their learning journey. I've successfully managed both short-term and long-term internship batches, handling over 50+ students at a time in offline and online sessions. My sessions cover both the theoretical aspects and real-time project work, helping students transition from learners to confident developers.
+                    Currently, I work as a Technical Trainer at Kevell Global Solutions, Madurai, where I lead web development internship programs. I design training modules, mentor 50+ students per batch, and guide them through both theory and real-time projects.
                   </p>
                   <p className="text-justify">
-                    I am deeply passionate about continuous learning and believe in sharing knowledge to uplift others in the tech community. Whether it's writing code, guiding beginners through complex topics, or solving problems in real-world projects, I find joy in every step of the process. I aspire to grow further in the field of full stack development and technical education, constantly seeking new challenges and opportunities to make a positive impact.
+                    Passionate about continuous learning and knowledge sharing, I enjoy coding, mentoring, and solving real-world challenges. I'm eager to grow further in full stack development and technical education.
                   </p>
                 </div>
               </div>
