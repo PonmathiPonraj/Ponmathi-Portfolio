@@ -9,28 +9,28 @@ const Experience: React.FC = () => {
       location: 'Madurai',
       period: '05/2024 - Present',
       description: [
-        'Delivered full stack and web development training for internship cohorts.',
-        'Conducted both short-term and long-term programs for students and graduates.',
-        'Designed project-based curricula covering frontend, backend, and deployment.',
-        'Adopted emerging tools to align training with evolving industry trends.'
+        'Trained and mentored 300+ students in MERN Stack and web technologies through structured offline and online programs.',
+        'Designed and delivered project-based curricula covering frontend, backend, APIs, and cloud deployment to simulate real-world development.',
+        'Guided students in career preparation - resume building, coding assessments, aptitude practice, and technical mock interviews - boosting placement readiness.',
+        'Continuously integrated modern tools, frameworks, and authentication practices to keep training aligned with current industry standards.'
       ],
       technologies: ['Full Stack Development', 'Web Development', 'Soft Skills Training', 'Student Mentoring', 'Career Guidance'],
       color: 'from-primary-500 to-primary-600'
     },
-    {
-      title: 'Website Developer',
-      company: 'Freelancer',
-      location: 'Sivakasi',
-      period: '10/2022 - 12/2023',
-      description: [
-        'Developed responsive, user-friendly websites for local businesses with mobile-first design.',
-        'Built backend logic and database connectivity for dynamic updates and real-time interaction.',
-        'Delivered a custom site for a cracker shop with live pricing updates and seasonal visibility.',
-        'Enhanced user engagement through clean layouts and seamless cross-device performance.'
-      ],
-      technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'SQL'],
-      color: 'from-secondary-500 to-secondary-600'
-    },
+    // {
+    //   title: 'Website Developer',
+    //   company: 'Freelancer',
+    //   location: 'Sivakasi',
+    //   period: '10/2022 - 12/2023',
+    //   description: [
+    //     'Developed responsive, user-friendly websites for local businesses with mobile-first design.',
+    //     'Built backend logic and database connectivity for dynamic updates and real-time interaction.',
+    //     'Delivered a custom site for a cracker shop with live pricing updates and seasonal visibility.',
+    //     'Enhanced user engagement through clean layouts and seamless cross-device performance.'
+    //   ],
+    //   technologies: ['HTML', 'CSS', 'Bootstrap', 'PHP', 'SQL'],
+    //   color: 'from-secondary-500 to-secondary-600'
+    // },
     {
       title: 'Junior Technologist',
       company: 'Gogosoon Private Limited',
