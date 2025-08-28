@@ -79,7 +79,7 @@ const Testimonials = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">What My Students Say</h2>
+          <h2 className="text-4xl font-bold mb-4">Words from My Students</h2>
           <div className="w-20 h-1 bg-primary-500 mx-auto"></div>
         </motion.div>
 
